@@ -2,6 +2,8 @@
   "name": "@eswind/root",
   "packageManager": "yarn@3.2.0",
   "private": true,
+  "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
+  "license": "ISC",
   "workspaces": [
     "packages/*"
   ],
@@ -15,8 +17,6 @@
     "type": "git",
     "url": "git+https://github.com/esoto76/eswind.git"
   },
-  "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/esoto76/eswind/issues"
   },
