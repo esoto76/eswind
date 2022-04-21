@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "noEmitOnError": true,
+    "types": ["@types/node"],
+    "jsx": "react",
+    "noEmit": true
+  },
+  "exclude": ["node_modules"]
+}

@@ -6,6 +6,11 @@
     "packages/*"
   ],
   "description": "es tailwindcss packages, plugins and presets - monorepo",
+  "devDependencies": {
+    "@types/node": "^17.0.25",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/esoto76/eswind.git"
