@@ -1,0 +1,16 @@
+{
+  "name": "eswind",
+  "version": "0.0.1-alpha.1",
+  "description": "es tailwindcss",
+  "main": "index.js",
+  "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esoto76/eswind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/esoto76/eswind/issues"
+  },
+  "homepage": "https://github.com/esoto76/eswind/tree/main/packages/eswind#readme.md"
+}
