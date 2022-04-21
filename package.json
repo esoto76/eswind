@@ -1,0 +1,19 @@
+{
+  "name": "@eswind/root",
+  "packageManager": "yarn@3.2.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "es tailwindcss packages, plugins and presets - monorepo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esoto76/eswind.git"
+  },
+  "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esoto76/eswind/issues"
+  },
+  "homepage": "https://github.com/esoto76/eswind#readme"
+}
