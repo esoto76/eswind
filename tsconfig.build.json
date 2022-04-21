@@ -10,8 +10,7 @@
     "allowJs": true,
     "noEmitOnError": true,
     "types": ["@types/node"],
-    "jsx": "react",
-    "noEmit": true
+    "jsx": "react"
   },
   "exclude": ["node_modules"]
 }
