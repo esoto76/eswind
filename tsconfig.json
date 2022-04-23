@@ -1,4 +1,24 @@
 {
-  "extends": "./tsconfig.build.json",
-  "compilerOptions": { "baseUrl": "." }
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "lib": ["esnext", "DOM"],
+    "declaration": true,
+    "declarationMap": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "noEmitOnError": true,
+    "types": ["@types/node"],
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "paths": { "eswind": ["packages/eswind/src"] },
+    "resolveJsonModule": true,
+    "baseUrl": "."
+  },
+  "include": ["./packages/*/src"],
+  "exclude": ["node_modules"]
 }
