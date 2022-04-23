@@ -1,1 +1,3 @@
-export const Name = "eswind";
+const Name = "eswind";
+
+export default Name;

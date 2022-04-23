@@ -6,7 +6,7 @@
   "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "build": "tsc --project tsconfig.build.json"
+    "build": "rollup -c"
   },
   "devDependencies": {
     "@types/node": "^17.0.25",
