@@ -1,0 +1,25 @@
+{
+  "name": "@eswind/configs",
+  "version": "0.0.1-alpha.1",
+  "description": "es tailwindcss configs",
+  "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.27",
+    "tailwindcss": "^3.0.24",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esoto76/eswind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/esoto76/eswind/issues"
+  },
+  "homepage": "https://github.com/esoto76/eswind/tree/main/packages/configs#readme.md"
+}

@@ -10,7 +10,8 @@
   },
   "workspaces": [
     "packages/eswind",
-    "packages/presets"
+    "packages/presets",
+    "packages/configs"
   ],
   "devDependencies": {
     "@babel/core": "^7.17.9",
