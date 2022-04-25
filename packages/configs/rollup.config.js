@@ -9,13 +9,15 @@ const input = "./src/index.ts";
 
 const external = [];
 
+const preserveEntrySignatures = "allow-extension";
+
 const output = {
   format: "cjs",
   file: "dist/index.js",
   preferConst: true,
-  generatedCode: "es2015",
   freeze: false,
-  exports: "default",
+  exports: "auto",
+  interop: "auto",
   externalLiveBindings: true,
 };
 
@@ -42,4 +44,5 @@ export default {
   plugins,
   watch,
   treeshake: "smallest",
+  preserveEntrySignatures,
 };
