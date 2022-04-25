@@ -1,3 +1,1 @@
-const Name = "@eswind/configs";
-
-export default Name;
+export * from "./screens";
