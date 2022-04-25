@@ -6,7 +6,8 @@
   "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w"
   },
   "dependencies": {
     "@types/node": "^17.0.27",
