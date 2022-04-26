@@ -7,5 +7,11 @@
     "declarationDir": "./dist"
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "scripts", "rollup.config.js"]
+  "exclude": [
+    "dist",
+    "scripts",
+    "rollup.config.js",
+    "node_modules",
+    "**/node_modules"
+  ]
 }

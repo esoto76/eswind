@@ -4,10 +4,13 @@ import Commonjs from "@rollup/plugin-commonjs";
 import Json from "@rollup/plugin-json";
 import Resolve from "@rollup/plugin-node-resolve";
 import TS from "rollup-plugin-ts";
+import { dependencies } from "./package.json";
 
 const input = "./src/index.ts";
 
-const external = [];
+const external = [...Object.keys(dependencies)];
+
+const preserveEntrySignatures = "allow-extension";
 
 const output = {
   format: "cjs",
@@ -15,7 +18,8 @@ const output = {
   preferConst: true,
   generatedCode: "es2015",
   freeze: false,
-  exports: "default",
+  exports: "auto",
+  interop: "auto",
   externalLiveBindings: true,
 };
 
@@ -42,4 +46,5 @@ export default {
   plugins,
   watch,
   treeshake: "smallest",
+  preserveEntrySignatures,
 };
