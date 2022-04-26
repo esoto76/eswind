@@ -16,7 +16,7 @@ const output = {
   file: "dist/index.js",
   preferConst: true,
   freeze: false,
-  exports: "auto",
+  exports: "named",
   externalLiveBindings: false,
 };
 
