@@ -4,7 +4,8 @@
     "rootDir": ".",
     "outDir": "./dist",
     "declaration": true,
-    "declarationDir": "./dist"
+    "declarationDir": "./dist",
+    "composite": true
   },
   "include": ["src/**/*"],
   "exclude": ["dist", "scripts", "rollup.config.js"]
