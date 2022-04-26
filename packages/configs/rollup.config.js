@@ -17,12 +17,11 @@ const output = {
   preferConst: true,
   freeze: false,
   exports: "auto",
-  interop: "auto",
-  externalLiveBindings: true,
+  externalLiveBindings: false,
 };
 
 const plugins = [
-  TS(),
+  TS({ tsconfig: "./tsconfig.json" }),
   Json({ namedExports: true, preferConst: true }),
   Babel({ babelHelpers: "bundled" }),
   Commonjs(),

@@ -4,6 +4,8 @@
   "description": "es tailwindcss configs",
   "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
   "license": "ISC",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "build:watch": "rollup -c -w"
