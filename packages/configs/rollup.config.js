@@ -7,7 +7,7 @@ import TS from "rollup-plugin-ts";
 
 const input = "./src/index.ts";
 
-const external = [];
+const external = ["@types/tailwindcss"];
 
 const preserveEntrySignatures = "allow-extension";
 
