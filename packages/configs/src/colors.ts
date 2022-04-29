@@ -1,4 +1,6 @@
-export const colors = {
+import { ESWindThemeConfig } from "./types";
+
+export const colors: ESWindThemeConfig["colors"] = {
   gray: {
     "50": "#FAFAFA",
     "100": "#F5F5F5",

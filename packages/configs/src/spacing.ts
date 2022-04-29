@@ -1,4 +1,6 @@
-export const spacing = {
+import { ESWindThemeConfig } from "./types";
+
+export const spacing: ESWindThemeConfig["spacing"] = {
   "0-px": "0px",
   "0-rem": "0rem",
   "1-px": "1px",

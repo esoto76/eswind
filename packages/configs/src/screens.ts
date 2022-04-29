@@ -1,4 +1,6 @@
-export const screens = {
+import { ESWindThemeConfig } from "./types";
+
+export const screens: ESWindThemeConfig["screens"] = {
   sm: "320px",
   "max-sm": { max: "320px" },
   "s-med": "480px",
