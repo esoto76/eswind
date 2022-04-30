@@ -29,18 +29,49 @@ interface PluginUtils {
   ) => string;
 }
 
+type FilePath = string;
+type RawFile = { raw: string; extension?: string };
+type ExtractorFn = (content: string) => string[];
+type TransformerFn = (content: string) => string;
+type ContentConfig =
+  | (FilePath | RawFile)[]
+  | {
+      files: (FilePath | RawFile)[];
+      extract?: ExtractorFn | { [extension: string]: ExtractorFn };
+      transform?: TransformerFn | { [extension: string]: TransformerFn };
+    };
+
+type SafelistConfig =
+  | string[]
+  | {
+      pattern: RegExp;
+      variants: string[];
+    }[];
+
+type FutureConfigValues = never;
+type FutureConfig =
+  | Expand<"all" | Partial<Record<FutureConfigValues, boolean>>>
+  | [];
+
+type ExperimentalConfigValues = "optimizeUniversalDefaults";
+type ExperimentalConfig =
+  | Expand<"all" | Partial<Record<ExperimentalConfigValues, boolean>>>
+  | [];
+
 type ESWindScreen =
   | { raw: string }
   | { min: string }
   | { max: string }
   | { min: string; max: string };
 
+type Screen = boolean;
+type ScreensConfig = boolean;
+
 type ESWindScreensConfig =
   | string[]
   | KeyValuePair<string, string | ESWindScreen | ESWindScreen[]>;
 
-export interface ESWindThemeConfig {
-  extend: Partial<Omit<ESWindThemeConfig, "extend">>;
+export interface ESWindThemeCoreConfig {
   screens: ResolvableTo<ESWindScreensConfig>;
   colors: ResolvableTo<RecursiveKeyValuePair>;
   spacing: ResolvableTo<KeyValuePair>;
@@ -177,4 +208,25 @@ export interface ESWindThemeConfig {
   [key: string]: any;
 }
 
-export type ESWindConfigsPkg = Partial<ESWindThemeConfig>;
+export interface ESWindThemeConfig extends ESWindThemeCoreConfig {
+  extend: Partial<Omit<ESWindThemeConfig, "extend">>;
+}
+
+export interface RequiredConfig {
+  content: ContentConfig;
+}
+
+export interface OptionalConfig {
+  important: boolean | string;
+  prefix: string;
+  separator: string;
+  safelist: Partial<SafelistConfig>;
+  presets: ESWindBuildConfig[];
+  future: Partial<FutureConfig>;
+  experimental: Partial<ExperimentalConfig>;
+  darkMode: "media" | "class" | ["class", string];
+  theme: Partial<ESWindThemeConfig>;
+}
+
+export type ESWindConfigsPkg = Partial<ESWindThemeCoreConfig>;
+export type ESWindBuildConfig = RequiredConfig & Partial<OptionalConfig>;

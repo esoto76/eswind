@@ -1,10 +1,4 @@
-import { colors } from "./colors";
-import { screens } from "./screens";
-import { spacing } from "./spacing";
-import { ESWindConfigsPkg } from "./types";
+import { screens, colors, spacing, ESWindThemeCore } from "@theme";
 
-export { screens, colors, spacing };
-
-const Configs: ESWindConfigsPkg = { screens, colors, spacing };
-export default Configs;
-export * from "./types";
+const Configs: Partial<ESWindThemeCore> = { screens, colors, spacing };
+export { screens, colors, spacing, ESWindThemeCore, Configs as default };
