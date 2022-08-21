@@ -14,6 +14,8 @@ export interface SpacingOptions {
 
 export type GetSpacingFn = (options: Partial<SpacingOptions>) => SpacingTheme;
 
-export type PresetConfig = Partial<Config>;
+export type SpacingPresetConfig = Partial<Config>;
 
-export type GetPresetFn = (options?: Partial<SpacingOptions>) => PresetConfig;
+export type GetSpacingPresetFn = (
+  options?: Partial<SpacingOptions>
+) => SpacingPresetConfig;

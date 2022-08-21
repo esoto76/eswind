@@ -1,7 +1,7 @@
 import { GetSpacing } from './fn';
-import { GetPresetFn, PresetConfig } from './types';
+import { GetSpacingPresetFn, SpacingPresetConfig } from './types';
 
-export const GetPreset: GetPresetFn = options => {
+export const GetSpacingPreset: GetSpacingPresetFn = options => {
   return {
     theme: {
       spacing: GetSpacing(options || {})
@@ -9,8 +9,8 @@ export const GetPreset: GetPresetFn = options => {
   };
 };
 
-export const Preset: PresetConfig = GetPreset();
-export { Preset as default };
+export const SpacingConfig: SpacingPresetConfig = GetSpacingPreset();
+export { SpacingConfig as default };
 export * from './pkg';
 export * from './types';
 export { GetSpacing } from './fn';
