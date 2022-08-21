@@ -1,12 +1,12 @@
 {
-  "name": "@eswind/presets",
+  "name": "@eswind/preset",
   "version": "0.0.1-alpha.1",
   "description": "es tailwindcss presets configs",
   "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
   "license": "ISC",
-  "main": "./dist/es-wind-presets.cjs.js",
-  "module": "./dist/es-wind-presets.es.js",
-  "typings": "./dist/es-wind-presets.d.js",
+  "main": "./dist/es-wind-preset.cjs.js",
+  "module": "./dist/es-wind-preset.es.js",
+  "typings": "./dist/es-wind-preset.d.js",
   "files": [
     "./dist/**/*",
     "dist/**/*.js",
@@ -14,17 +14,19 @@
   ],
   "exports": {
     ".": {
-      "require": "./dist/es-wind-presets.cjs.js",
-      "import": "./dist/es-wind-presets.es.js",
-      "types": "./dist/es-wind-presets.d.ts"
+      "require": "./dist/es-wind-preset.cjs.js",
+      "import": "./dist/es-wind-preset.es.js",
+      "types": "./dist/es-wind-preset.d.ts"
     }
   },
   "scripts": {
     "build": "rollup -c",
-    "build:watch": "rollup -cw"
+    "build:watch": "rollup -cw",
+    "test": "node ./index.js"
   },
   "dependencies": {
-    "@types/node": "^18.7.8",
+    "@eswind/preset-spacing": "workspace:0.0.1-alpha.2",
+    "@types/node": "^18.7.9",
     "tailwindcss": "^3.1.8",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
@@ -37,5 +39,5 @@
   "bugs": {
     "url": "https://github.com/esoto76/eswind/issues"
   },
-  "homepage": "https://github.com/esoto76/eswind/tree/main/packages/presets#readme"
+  "homepage": "https://github.com/esoto76/eswind/tree/main/packages/preset#readme"
 }
