@@ -1,7 +1,9 @@
-import type { Config } from 'tailwindcss'
-import { theme } from './theme'
-export const Name: string = ' __PKG__NAME__'
+import { PresetConfig } from './types';
+import { SpacingConfig, GetSpacing } from '@eswind/preset-spacing';
 
-const presets: Partial<Config> = { theme }
+export const Preset: Partial<PresetConfig> = { preset: [SpacingConfig] };
 
-export default presets
+export * from './pkg';
+export * from './types';
+
+export { Preset as default, SpacingConfig as SpacingPreset, GetSpacing };
