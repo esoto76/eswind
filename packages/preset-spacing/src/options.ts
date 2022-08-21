@@ -5,6 +5,7 @@ export const DefSpacingOptions: SpacingOptions = {
   end: 320,
   isPx: true,
   isRem: true,
+  prefix: '',
   range: 8,
   remVal: 16,
   start: 24
