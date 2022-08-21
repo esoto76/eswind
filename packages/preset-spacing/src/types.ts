@@ -12,6 +12,6 @@ export interface SpacingOptions {
   start: number;
 }
 
-export type GetSpacingOptionsFn = (
+export type GetSpacingThemeFn = (
   options: Partial<SpacingOptions>
 ) => SpacingTheme;
