@@ -28,7 +28,7 @@ const external = [];
 const formats = ["es", "cjs"];
 const main = name.replace("@", "").replace("/", "-");
 
-const input = {};
+const input = { [main]: "src/index.ts" };
 
 const root = resolve(__dirname);
 
@@ -157,15 +157,6 @@ const GetInputPaths = async (dir = buildDir, file = entryName) => {
 
 export default async () => {
   try {
-    const paths = await GetInputPaths();
-
-    for (let path of paths)
-      input[
-        path === `${buildDir}/${entryName}`
-          ? main
-          : path.replace(`${buildDir}/`, "").replace(`/${entryName}`, "")
-      ] = path;
-
     const configs = {
       input,
       output: GetOutput(),
