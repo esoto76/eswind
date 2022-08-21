@@ -4,9 +4,9 @@
   "description": "es tailwindcss preset-spacing",
   "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
   "license": "ISC",
-  "main": "./dist/es-wind-preset-spacing.cjs.js",
-  "module": "./dist/es-wind-preset-spacing.es.js",
-  "typings": "./dist/es-wind-preset-spacing.d.js",
+  "main": "./dist/eswind-preset-spacing.cjs.js",
+  "module": "./dist/eswind-preset-spacing.es.js",
+  "typings": "./dist/eswind-preset-spacing.d.js",
   "files": [
     "./dist/**/*",
     "dist/**/*.js",
@@ -14,9 +14,9 @@
   ],
   "exports": {
     ".": {
-      "require": "./dist/es-wind-preset-spacing.cjs.js",
-      "import": "./dist/es-wind-preset-spacing.es.js",
-      "types": "./dist/es-wind-preset-spacing.d.ts"
+      "require": "./dist/eswind-preset-spacing.cjs.js",
+      "import": "./dist/eswind-preset-spacing.es.js",
+      "types": "./dist/eswind-preset-spacing.d.ts"
     }
   },
   "scripts": {
