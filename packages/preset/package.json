@@ -4,9 +4,9 @@
   "description": "es tailwindcss presets configs",
   "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
   "license": "ISC",
-  "main": "./dist/es-wind-preset.cjs.js",
-  "module": "./dist/es-wind-preset.es.js",
-  "typings": "./dist/es-wind-preset.d.js",
+  "main": "./dist/eswind-preset.cjs.js",
+  "module": "./dist/eswind-preset.es.js",
+  "typings": "./dist/eswind-preset.d.js",
   "files": [
     "./dist/**/*",
     "dist/**/*.js",
@@ -14,9 +14,9 @@
   ],
   "exports": {
     ".": {
-      "require": "./dist/es-wind-preset.cjs.js",
-      "import": "./dist/es-wind-preset.es.js",
-      "types": "./dist/es-wind-preset.d.ts"
+      "require": "./dist/eswind-preset.cjs.js",
+      "import": "./dist/eswind-preset.es.js",
+      "types": "./dist/eswind-preset.d.ts"
     }
   },
   "scripts": {
