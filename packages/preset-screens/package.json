@@ -1,6 +1,6 @@
 {
   "name": "@eswind/preset-screens",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-rc.1",
   "description": "es tailwindcss preset-screens",
   "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
   "license": "ISC",
