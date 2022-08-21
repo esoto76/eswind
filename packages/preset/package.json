@@ -1,6 +1,6 @@
 {
   "name": "@eswind/preset",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "es tailwindcss presets configs",
   "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
   "license": "ISC",
