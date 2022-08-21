@@ -1,6 +1,6 @@
 import { GetSpacingFn } from './types';
 import { SpacingOptionsParser } from './options';
-import { IsNum, OKeys, MergeObjs } from './helpers';
+import { IsNum, OKeys, MergeObjs } from '@esoto/helpers';
 
 const getNumbers: (
   start: number,

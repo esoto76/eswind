@@ -1,5 +1,5 @@
 import { SpacingOptions } from './types';
-import { IsObj, IsDef } from './helpers';
+import { IsObj, IsDef } from '@esoto/helpers';
 
 export const DefSpacingOptions: SpacingOptions = {
   end: 320,
