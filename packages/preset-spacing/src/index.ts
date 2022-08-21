@@ -1,1 +1,1 @@
-export const Name: string = ' __PKG__NAME__'
+export * from './pkg'
