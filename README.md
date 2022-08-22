@@ -2,6 +2,10 @@
 
 es tailwindcss packages, plugins and presets - monorepo
 
+## eswind - core
+
+es tailwindcss configs [here](https://github.com/esoto76/eswind/tree/main/packages/core#readme)
+
 ## @eswind/preset
 
 es tailwindcss presets configs - all wrapped into one [here](https://github.com/esoto76/eswind/tree/main/packages/preset#readme)
