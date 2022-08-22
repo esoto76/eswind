@@ -1,0 +1,42 @@
+{
+  "name": "eswind",
+  "version": "0.0.1-alpha.1",
+  "description": "es tailwindcss configs",
+  "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
+  "license": "ISC",
+  "main": "./dist/eswind.cjs.js",
+  "module": "./dist/eswind.es.js",
+  "typings": "./dist/eswind.d.js",
+  "files": [
+    "./dist/**/*",
+    "dist/**/*.js",
+    "dist/*.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/eswind.cjs.js",
+      "import": "./dist/eswind.es.js",
+      "types": "./dist/eswind.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -cw",
+    "test": "node ./index.js"
+  },
+  "dependencies": {
+    "@types/node": "^18.7.9",
+    "tailwindcss": "^3.1.8",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esoto76/eswind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/esoto76/eswind/issues"
+  },
+  "homepage": "https://github.com/esoto76/eswind/tree/main/packages/core#readme"
+}
