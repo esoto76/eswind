@@ -1,6 +1,6 @@
 {
   "name": "eswind-monorepo",
-  "packageManager": "pnpm@7.10.0",
+  "packageManager": "pnpm@7.11.0",
   "private": true,
   "description": "es tailwindcss packages, plugins and presets - monorepo",
   "author": "Eric Sotomayor <elpasocolorartist@gmail.com>",
